@@ -2,31 +2,78 @@
 // This is the file you will want to update to customize your page.
 
 // Import Google fonts here
+$font-family-base: 'Source Sans 3', sans-serif;
+$font-family-headings: 'Libre Baskerville', serif;
 
+$primary: #A04ADD;
+$secondary: #3B53C7;
+$success: #A4D882;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #f2f2f2;
+$dark: #181853;
 
+$h1-font-size: 3.052rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
-
-
+body {
+    background-color: $light;
+  }  
 
 // Adjust nav link hover color here
-
-
+.navbar {
+    background-color: $dark;
+    color: $light;
+    
+    .navbar-brand {
+      font-family: $font-family-headings;
+    }
+    
+    a.nav-link:hover {
+      color: $primary;
+    }
+  }  
 
 // Typography
 // Change font family for base text
-
+body {
+    font-family: $font-family-base;
+  }
 
 // Change font family for headings
-
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-headings;
+  }
 
 // Change font sizes for h1-h6 using values in assignment
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+h4 { font-size: $h4-font-size; }
+h5 { font-size: $h5-font-size; }
+h6 { font-size: $h6-font-size; }
 
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Add additional custom code here
+.btn-primary { background-color: $primary; }
+.btn-secondary { background-color: $secondary; }
+.btn-success { background-color: $success; }
+.btn-info { background-color: $info; }
+.btn-warning { background-color: $warning; }
+.btn-danger { background-color: $danger; }
 
+footer {
+    background-color: $dark;
+    color: $light;
+  }
+  
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.

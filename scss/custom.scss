@@ -5,6 +5,8 @@
 $font-family-base: 'Source Sans 3', sans-serif;
 $font-family-headings: 'Libre Baskerville', serif;
 
+// Include any default variable overrides here (colors, font sizes, font family, etc..)
+
 $primary: #A04ADD;
 $secondary: #3B53C7;
 $success: #A4D882;
@@ -14,17 +16,16 @@ $danger: #E5446D;
 $light: #f2f2f2;
 $dark: #181853;
 
-$h1-font-size: 3.052rem;
-$h2-font-size: 2.441rem;
-$h3-font-size: 1.953rem;
-$h4-font-size: 1.563rem;
-$h5-font-size: 1.25rem;
-$h6-font-size: 1rem;
-
-// Include any default variable overrides here (colors, font sizes, font family, etc..)
 body {
     background-color: $light;
   }  
+
+  $h1-font-size: 3.052rem;
+  $h2-font-size: 2.441rem;
+  $h3-font-size: 1.953rem;
+  $h4-font-size: 1.563rem;
+  $h5-font-size: 1.25rem;
+  $h6-font-size: 1rem;
 
 // Adjust nav link hover color here
 .navbar {
